@@ -1,0 +1,71 @@
+# welcome to plant world
+
+print("Welcome to plant world")
+
+print("A game created to improve the knowledge about plants in the future generation")
+
+
+Name = input("Enter your name")
+
+
+
+while (True) :
+
+    print("1. NEW GAME")
+    print("2. Quit")
+
+    print("Level 1")
+    choice = input("Enter your choice :")
+    if(choice==2) :
+        break
+    else:
+        Medicinal_plants = ["Ajwain","Aloevera","Basil","Bayleaves","Coriander","Curryleaves","Lavender","Mint","Mustard","Tulsi"]
+
+
+    j = 0
+    x = 0
+    chance = 10
+    j2 = 0
+    chance2 = 10
+
+    y = 0
+
+    while (x<11):
+
+        Plant = input("Enter the medicinal plants name near your house ")
+        Plant = Plant.title()
+        for i in Medicinal_plants :
+            if(Plant==i) :
+                print("*****Congratulations !!!*****")
+                print("****You have guessed the plant correctly ****")
+                print("***Farming is a profession of hope***")
+                print("**So, Improve your knowledge on plants and farming**")
+                print("*To know more about the plants search for the plant name online and know more about it*")
+                print("Points :")
+                j = j+1
+                j = j*50
+                print(j)
+                chance = chance - 1
+                print(f"Remaining chances {chance}")
+
+                if(chance == 0) :
+                        print("You have passed the level 1")
+                        print("Level 2")
+                        Medicinal_plants2 = ["ReishiMushroom", "Jiaogulan" , "Chamomile" , "Dandelion" ,  "LadyFerns" , "GoldenRoot" ,"SchisandraBerries", "Sage",
+                        "Marigold" , "CayennePepper"]
+                        Plant2 = input("Enter the rare medicinal plants ")
+                        Plant2 = Plant2.title()
+                        for i2 in Medicinal_plants:
+                            if (Plant == i2):
+                                print("*****Congratulations !!!*****")
+                                print("****You have guessed the plant correctly ****")
+                                print("***Farming is a profession of hope***")
+                                print("**So, Improve your knowledge on plants and farming**")
+                                print("*To know more about the plants search for the plant name online and know more about it*")
+                                print("Points :")
+                                j2 = j2 + 1
+                                j2 = j2 *50
+                                print(j2)
+                                print(f"Congratulations {Name}")
+                                print("You are the winner")
+
